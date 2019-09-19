@@ -18,6 +18,25 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+  // 链接mongodb
+  config.mongoose = {
+    client: {
+      url: 'mongodb://127.0.0.1/wgtest',  //你的数据库地址，不要端口
+      options: {
+        useNewUrlParser: true
+      }
+    }  
+  }
+
+  // 链接redis
+  config.redis = {
+    client: {
+      port: 6379,          // Redis port
+      host: '127.0.0.1',   // Redis host
+      password: 'auth',
+      db: 0
+    }
+  }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
