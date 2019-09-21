@@ -14,5 +14,20 @@ module.exports = {
   redis: {
     enable: false,
     package: 'egg-redis'
+  },
+
+  validate: {
+    enable: true,
+    package: 'egg-validate'
+  },
+
+  nunjucks: {
+    enable: true,
+    package: 'egg-view-nunjucks'
+  },
+
+  routerPlus: {
+    enable: true,
+    package: 'egg-router-plus'
   }
 };
